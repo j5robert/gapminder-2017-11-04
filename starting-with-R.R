@@ -10,3 +10,9 @@ life_exp_continent <- gapminder %>%
   summarize(mean_lifeExp <- mean(lifeExp))
 
 life_exp_continent
+
+life_exp_Canada <- gapminder %>% 
+  filter(country == "Canada") %>% 
+  select(year, lifeExp)
+
+life_exp_Canada
